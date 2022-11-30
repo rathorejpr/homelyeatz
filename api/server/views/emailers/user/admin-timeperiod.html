@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <title> first page </title>
+</head>
+<style>
+    body {
+        font-family: 'Josefin Sans' !important;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    p:last-child {
+        margin-top: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+    }
+
+    tbody {
+        background: #F5F5F5;
+        padding: 20px;
+        border: 1px solid #707070;
+    }
+
+    .logo-align img {
+        width: auto;
+        object-fit: cover;
+        height: 40px;
+    }
+
+    .logo-text img {
+        width: 98px;
+        height: 34px;
+    }
+
+    .all-align-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .font-size-18 {
+        font-size: 18px;
+    }
+
+    .text-black {
+        color: #000000;
+    }
+
+    .mb-0 {
+        margin-bottom: 0;
+    }
+
+    .underline {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .header-align {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top-space-username {
+        margin-top: 5px !important;
+    }
+
+    .email-body {
+        min-height: calc(100vh - 140px);
+        background: #fff;
+        border: 1px solid #707070;
+        padding: 20px;
+    }
+
+    .full-width {
+        width: 600px;
+    }
+
+    .introduction-text p {
+        font-size: 20px;
+        font-family: 'Josefin Sans';
+        font-weight: 600;
+    }
+
+    .introduction-text h6 {
+        margin-top: 15px;
+        font-weight: 400;
+    }
+
+    .day-text p {
+        margin-top: 22px;
+        line-height: 22px;
+    }
+
+    .day-text span {
+        font-weight: 600;
+    }
+
+    .contact p {
+        margin-top: 40px;
+        line-height: 22px;
+    }
+
+    .reset-password-btn {
+        min-width: 300px;
+        min-height: 50px;
+        background: #000;
+        border: 1px solid #707070;
+        padding: 8px 15px;
+        color: #fff;
+        font-family: 'Josefin Sans' !important;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn-top-space {
+        margin-top: 45px;
+    }
+
+    @media (min-width:220px) and (max-width:767px) {
+        .full-width {
+            width: 100% !important;
+        }
+
+        .header-align {
+            display: block;
+        }
+
+        .text-right-mobile-view {
+            text-align: left !important;
+        }
+
+        .all-align-content {
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+
+<body>
+
+    <table cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <!-- style="padding: 20px 0 30px 0;" -->
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" style=" border-collapse: collapse;"
+                    class="full-width">
+                    <tr>
+                        <td style="padding: 15px;">
+                            <div class="header-align">
+                                <div class="all-align-content">
+                                    <div class="logo-align">
+                                        <img
+                                            src="https://lotus-assets.s3-ap-south-1.amazonaws.com/Product/Xyxs(1615286946955).png" />
+                                    </div>
+
+                                </div>
+                                <div class="">
+                                    <p align="right" class="font-size-18 text-black mb-0 text-right-mobile-view">
+                                        Need Help? <a
+                                            href="http://lotusjewels.com.s3-website.ap-south-1.amazonaws.com/Contact">
+                                            <span class="underline">Contact Us </span>
+                                        </a>
+                                    </p>
+                                    <p class="font-size-18 text-black mb-0 top-space-username">
+                                        Customer Username : {{Username}}
+                                    </p>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px;">
+                            <div class="email-body">
+                                <div class="introduction-text">
+                                    <p class="text-black mb-0">Hi,</p>
+                                    <h6 class="font-size-18 text-black mb-0">Hope you are doing great.</h6>
+                                </div>
+                                <div class="day-text">
+                                    <p class="font-size-18 text-black mb-0">
+                                        We would love to inform you that the access to our E-Catalog has
+                                        been granted to you for **** <span> Hours/Days.</span>
+                                    </p>
+
+                                    <div class="contact">
+                                        <p class="font-size-18 text-black mb-0">If you need any assistance, kindly <a
+                                                href="http://lotusjewels.com.s3-website.ap-south-1.amazonaws.com/Contact">
+                                                <span>Contact </span></a> Us and we will be glad to assist you</p>
+                                        <p class="font-size-18 text-black mb-0">Thank you & Have a wonderful day. </p>
+                                    </div>
+                                    <div class="team-text">
+                                        <p class="font-size-18 text-black mb-0">Regards,</p>
+                                        <h6 class="font-size-18 text-black mb-0">
+                                            Team Lotus.
+                                        </h6>
+                                    </div>
+
+                                    <div align="center" class="btn-top-space">
+                                        <a href="http://lotusjewels.com.s3-website.ap-south-1.amazonaws.com/auth/login">
+                                            <button class="reset-password-btn">
+                                                Login
+                                            </button>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
